@@ -29,7 +29,7 @@ function love.load()
 		debugMode = true
 		
 	--Default Image Filter
-		lg.setDefaultImageFilter("nearest", "nearest")
+		lg.setDefaultFilter("nearest", "nearest")
 
 	--Background-Farbe
 		love.graphics.setBackgroundColor(0, 0, 0)
@@ -45,7 +45,7 @@ function love.load()
 		highscore.set("highscores.txt", 10, "None", 0)
 		
 	--Bildschirmdaten
-		width, height, fullscreen, vsync, fsaa = love.graphics.getMode()
+		width, height, fullscreen, vsync, fsaa = love.window.getMode()
 		
 
 end
